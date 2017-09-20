@@ -47,6 +47,8 @@
     <Compile Include="Game1v1.cs" />
     <Compile Include="Game5v5.cs" />
     <Compile Include="GameRender.cs" />
+    <Compile Include="GameRender1v1.cs" />
+    <Compile Include="GameRender5v5.cs" />
     <Compile Include="Health.cs" />
     <Compile Include="IRender.cs" />
     <Compile Include="Item.cs" />

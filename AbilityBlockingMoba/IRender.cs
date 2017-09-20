@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace AbilityBlockingMoba
 {
-    public interface IRender
-    {
-        void Render(Game1v1 game);
-        void Render(Game5v5 game);
+    public interface IRender<T> where T : Game
+    {        
+        void Render();
         void Render(Minion minion);
         void Render(Player player);
     }

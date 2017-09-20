@@ -9,7 +9,6 @@ namespace AbilityBlockingMoba
     public class Player : LivingEntity
     {
         public string Name;        
-
         public Ability Passive;
 
         public Ability MinorAbility1;
@@ -27,5 +26,11 @@ namespace AbilityBlockingMoba
         public Wearable Item5;
         public Wearable Item6;
         public Wearable Item7;
+    }
+
+    public enum TeamType
+    {
+        Red,
+        Blue
     }
 }

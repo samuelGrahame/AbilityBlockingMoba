@@ -10,6 +10,7 @@ namespace AbilityBlockingMoba
     {
         public decimal Gold;
         public Health Life;
+        public TeamType Team;
 
         public Stat Attack;
         public Stat Strength;

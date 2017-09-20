@@ -6,44 +6,20 @@ using System.Threading.Tasks;
 
 namespace AbilityBlockingMoba
 {
-    public class GameRender
+    public class GameRender<T> where T : Game
     {
-        public IRender ActiveRender;        
+        public IRender<T> ActiveRender;
 
-        public void Render(Game1v1 game)
+        public T Game;
+
+        public GameRender()
         {
-            ActiveRender.Render(game);
-            foreach (var minion in game.Team1_Minions)
-            {
-                ActiveRender.Render(minion);
-            }
-            foreach (var minion in game.Team2_Minions)
-            {
-                ActiveRender.Render(minion);
-            }
-            ActiveRender.Render(game.Player1);
-            ActiveRender.Render(game.Player2);
+                      
         }
 
-        public void Render(Game5v5 game)
+        public virtual void Render()
         {
-            ActiveRender.Render(game);
-            foreach (var minion in game.Team1_Minions)
-            {
-                ActiveRender.Render(minion);
-            }
-            foreach (var minion in game.Team2_Minions)
-            {
-                ActiveRender.Render(minion);
-            }
-            foreach (var player in game.Team1)
-            {
-                ActiveRender.Render(player);
-            }
-            foreach (var player in game.Team2)
-            {
-                ActiveRender.Render(player);
-            }            
+
         }
     }
 }
