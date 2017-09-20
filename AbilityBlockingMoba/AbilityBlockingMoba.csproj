@@ -40,25 +40,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ability.cs" />
-    <Compile Include="Camera.cs" />
-    <Compile Include="Entity.cs" />
-    <Compile Include="Game.cs" />
-    <Compile Include="Game1v1.cs" />
-    <Compile Include="Game5v5.cs" />
-    <Compile Include="GameRender.cs" />
-    <Compile Include="GameRender1v1.cs" />
-    <Compile Include="GameRender5v5.cs" />
-    <Compile Include="Health.cs" />
-    <Compile Include="IRender.cs" />
-    <Compile Include="Item.cs" />
-    <Compile Include="LivingEntity.cs" />
-    <Compile Include="Minion.cs" />
-    <Compile Include="Player.cs" />
+    <Compile Include="Levels\Ability.cs" />
+    <Compile Include="Entities\Camera.cs" />
+    <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Games\Game.cs" />
+    <Compile Include="Games\Game1v1.cs" />
+    <Compile Include="Games\Game5v5.cs" />
+    <Compile Include="GameRenders\GameRender.cs" />
+    <Compile Include="GameRenders\GameRender1v1.cs" />
+    <Compile Include="GameRenders\GameRender5v5.cs" />
+    <Compile Include="Levels\Health.cs" />
+    <Compile Include="GameRenders\IRender.cs" />
+    <Compile Include="Items\Item.cs" />
+    <Compile Include="Entities\LivingEntity.cs" />
+    <Compile Include="Entities\Minion.cs" />
+    <Compile Include="Entities\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Stat.cs" />
-    <Compile Include="Trinket.cs" />
-    <Compile Include="Wearable.cs" />
+    <Compile Include="Levels\Stat.cs" />
+    <Compile Include="Items\Trinket.cs" />
+    <Compile Include="Items\Wearable.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
