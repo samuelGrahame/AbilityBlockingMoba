@@ -41,10 +41,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ability.cs" />
+    <Compile Include="Camera.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="Game1v1.cs" />
     <Compile Include="Game5v5.cs" />
+    <Compile Include="GameRender.cs" />
     <Compile Include="Health.cs" />
+    <Compile Include="IRender.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="LivingEntity.cs" />
     <Compile Include="Minion.cs" />
