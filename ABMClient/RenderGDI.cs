@@ -14,6 +14,11 @@ namespace ABMClient
         public Graphics g;
         public Client Window;
 
+        public void Clear()
+        {
+            g.Clear(Color.CornflowerBlue);
+        }
+
         public Brush GetBrushFromTeam(TeamType type)
         {
             Brush brush;

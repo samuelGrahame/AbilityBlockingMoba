@@ -10,6 +10,7 @@ namespace AbilityBlockingMoba
     {
         public override void Render()
         {
+            ActiveRender.Clear();
             ActiveRender.Render();
             foreach (var minion in Game.Team1_Minions)
             {

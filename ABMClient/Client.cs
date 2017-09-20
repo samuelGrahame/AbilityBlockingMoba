@@ -10,13 +10,31 @@ namespace ABMClient
 {
     public class Client : Form
     {
-        public Game1v1 World = new Game1v1();
-        public Camera View = new Camera();
-
+        public Game1v1 World;
+        public Camera View;        
+        public GameRender1v1 Render;
         public bool IsRunning = false;
         public Client()
         {
+            SetStyle(
+                ControlStyles.AllPaintingInWmPaint | 
+                ControlStyles.OptimizedDoubleBuffer | 
+                ControlStyles.ResizeRedraw | 
+                ControlStyles.SupportsTransparentBackColor | 
+                ControlStyles.UserPaint, true);
 
+            World = new Game1v1();
+            View = new Camera();
+
+            Render = new GameRender1v1()
+            {
+                ActiveRender = new RenderGDI<Game1v1>()
+                {
+                    g = this.CreateGraphics(),
+                    Window = this
+                },
+                Game = World
+            };            
         }
 
         private void InitializeComponent()
@@ -37,7 +55,7 @@ namespace ABMClient
             IsRunning = true;
             while (IsRunning)
             {
-                
+                Render.Render();
                 Application.DoEvents();
             }
         }
